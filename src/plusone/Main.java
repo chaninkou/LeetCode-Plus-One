@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Main {
 	public static void main(String[] args) {
-		int[] digits = {1,4,5};
+		int[] digits = {9,9,9};
 		
 		System.out.println("Input: " + Arrays.toString(digits));
 		

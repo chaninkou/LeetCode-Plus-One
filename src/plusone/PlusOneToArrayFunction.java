@@ -9,8 +9,7 @@ public class PlusOneToArrayFunction {
 				return digits;
 			}
 
-			// For example: [0,9,9], If last element is 9, then replace it with
-			// 0
+			// For example: [0,9,9], If last element is 9, then replace it with 0
 			digits[i] = 0;
 		}
 
@@ -21,6 +20,7 @@ public class PlusOneToArrayFunction {
 		newNumber[0] = 1;
 
 		// This will only occur when the if statement doesn't go through
+		// example: 9,9,9
 		return newNumber;
 	}
 }
