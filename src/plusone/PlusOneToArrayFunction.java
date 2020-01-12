@@ -2,14 +2,15 @@ package plusone;
 
 public class PlusOneToArrayFunction {
 	public int[] plusOne(int[] digits) {
+		// Starting from last element
 		for (int i = digits.length - 1; i >= 0; i--) {
-			// If its less than 9, just add one
+			// If its less than 9, just add one and return right away
 			if (digits[i] < 9) {
 				digits[i] = digits[i] + 1;
 				return digits;
 			}
 
-			// For example: [0,9,9], If last element is 9, then replace it with 0
+			// For example: [1,9], If last element is 9, then replace it with 0
 			digits[i] = 0;
 		}
 
