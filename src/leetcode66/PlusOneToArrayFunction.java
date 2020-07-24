@@ -1,8 +1,8 @@
-package plusone;
+package leetcode66;
 
 public class PlusOneToArrayFunction {
 	public int[] plusOne(int[] digits) {
-		// Starting from last element
+		
 		for (int i = digits.length - 1; i >= 0; i--) {
 			// If its less than 9, just add one and return right away
 			if (digits[i] < 9) {
@@ -14,7 +14,7 @@ public class PlusOneToArrayFunction {
 			digits[i] = 0;
 		}
 
-		// This is for making an extra space, and insert 1 at the beginning
+		// Making an extra space to insert 1 at the beginning
 		int[] newNumber = new int[digits.length + 1];
 
 		// example: [9] -> [1,0] or [9,9] -> [1,0,0]
